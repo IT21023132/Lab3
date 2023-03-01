@@ -33,3 +33,6 @@ resp.on('end', () => { console.log(JSON.parse(data));
 });
 }).on('error', (err) => {
 console.log("Error: " + err.message); });
+
+//using module
+const myModule = require('./my-module.js'); console.log(myModule.myFunction());
