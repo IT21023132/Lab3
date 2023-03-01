@@ -36,3 +36,15 @@ console.log("Error: " + err.message); });
 
 //using module
 const myModule = require('./my-module.js'); console.log(myModule.myFunction());
+
+
+//promises
+const myPromise = new Promise((resolve, reject) => { if (condition) {
+    resolve('Success!'); } else {
+    reject('Failure!'); }
+    });
+    myPromise.then((result) => { console.log(result);
+    }).catch((error) => { console.log(error);
+    });
+
+    
